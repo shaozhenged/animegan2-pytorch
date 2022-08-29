@@ -127,3 +127,8 @@ Trained on <b>512x512</b> face images. Compared to v1, `🔻beautify` `🔺robus
 </details>
 
 
+附录：
+
+conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch
+
+python test.py --input_dir D:/work/Resource/realpersion

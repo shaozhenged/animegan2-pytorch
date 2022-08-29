@@ -31,7 +31,8 @@ def test(args):
     device = args.device
     
     net = Generator()
-    net.load_state_dict(torch.load(args.checkpoint, map_location="cpu"))
+    #net.load_state_dict(torch.load(args.checkpoint, map_location="cpu"))
+    net.load_state_dict(torch.load(args.checkpoint))
     net.to(device).eval()
     print(f"model loaded: {args.checkpoint}")
     
@@ -51,6 +52,7 @@ def test(args):
 
         out.save(os.path.join(args.output_dir, image_name))
         print(f"image saved: {image_name}")
+
 
 
 if __name__ == '__main__':
