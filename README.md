@@ -132,3 +132,9 @@ Trained on <b>512x512</b> face images. Compared to v1, `🔻beautify` `🔺robus
 conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch
 
 python test.py --input_dir D:/work/Resource/realpersion
+
+模型转换过程：
+
+```
+onnx2ncnn face_paint_512_v2_sim.onnx face_paint_512_v2.param face_paint_512_v2.bin
+```
